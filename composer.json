@@ -1,0 +1,33 @@
+{
+  "name": "laravelchen/swoole_framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "LaravelChen",
+      "email": "848407695@qq.com"
+    }
+  ],
+  "require": {
+    "illuminate/database": "^5.5",
+    "jenssegers/blade": "^1.1",
+    "illuminate/pagination": "^5.5",
+    "illuminate/validation": "^5.5",
+    "illuminate/cache": "^5.5",
+    "illuminate/redis": "^5.5",
+    "predis/predis": "^1.1",
+    "overtrue/easy-sms": "^1.0",
+    "lcobucci/jwt": "^3.2",
+    "illuminate/hashing": "^5.5",
+    "illuminate/encryption": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/",
+      "Conf\\": "Conf/",
+      "Core\\": "Core/"
+    }
+  },
+  "require-dev": {
+    "eaglewu/swoole-ide-helper": "dev-master"
+  }
+}

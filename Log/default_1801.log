@@ -1,0 +1,266 @@
+time : 18-01-24 16:34:40 message: {"type":["validation.required"],"password":["validation.required"]}
+time : 18-01-24 16:35:12 message: {"type":["validation.required"]}
+time : 18-01-24 16:35:57 message: {"type":["validation.in"]}
+time : 18-01-24 16:42:45 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:00 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:01 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:01 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:02 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:03 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:04 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:12 message: {"code":["validation.required"]}
+time : 18-01-24 16:43:14 message: {"code":["validation.required"]}
+time : 18-01-27 20:57:28 message: {"type":["validation.required"],"email":["validation.required_without"],"phone":["validation.required_without"],"password":["validation.required"]}
+time : 18-01-27 20:57:40 message: {"type":["validation.required"],"email":["validation.required_without"],"phone":["validation.required_without"],"password":["validation.required"]}
+time : 18-01-27 20:57:43 message: {"password":["validation.required"]}
+time : 18-01-27 20:57:44 message: {"password":["validation.required"]}
+time : 18-01-27 21:15:00 message: TypeError: Argument 1 passed to Illuminate\Database\Eloquent\Builder::create() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php on line 1417 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php:750
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(NULL)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#3 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#10 {main}
+time : 18-01-27 21:15:40 message: TypeError: Argument 1 passed to Illuminate\Database\Eloquent\Builder::create() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php on line 1417 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php:750
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(NULL)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#3 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#10 {main}
+time : 18-01-27 21:15:42 message: TypeError: Argument 1 passed to Illuminate\Database\Eloquent\Builder::create() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php on line 1417 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php:750
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(NULL)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#3 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#10 {main}
+time : 18-01-27 21:16:01 message: TypeError: Argument 1 passed to Illuminate\Database\Eloquent\Builder::create() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php on line 1417 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php:750
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(NULL)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#3 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#10 {main}
+time : 18-01-27 21:16:26 message: TypeError: Argument 1 passed to Illuminate\Database\Eloquent\Builder::create() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php on line 1417 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php:750
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(NULL)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#3 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#10 {main}
+time : 18-01-27 21:17:43 message: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '15861621202' for key 'phone' in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php:458
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(458): PDOStatement->execute()
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(657): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `us...', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#3 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(459): Illuminate\Database\Connection->run('insert into `us...', Array, Object(Closure))
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(411): Illuminate\Database\Connection->statement('insert into `us...', Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `us...', Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Builder.php(2135): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `us...', Array, 'id')
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(1270): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(708): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(673): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(536): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(753): Illuminate\Database\Eloquent\Model->save()
+#12 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/helpers.php(1035): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}(Object(App\Base\UserCenter\User))
+#13 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(754): tap(Object(App\Base\UserCenter\User), Object(Closure))
+#14 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(Array)
+#15 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#16 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#17 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#18 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#19 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#20 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#21 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#22 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#23 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#24 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '15861621202' for key 'phone' (SQL: insert into `users` (`email`, `password`, `phone`, `name`, `updated_at`, `created_at`) values (848407696@qq.com, $2y$10$lG.opFAqpMBgi/Z3Gyhbne83WTIhC.6clLtsEfUCscz46T49IrDOS, 15861621202, LaravelChen, 2018-01-27 21:17:43, 2018-01-27 21:17:43)) in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php:664
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(459): Illuminate\Database\Connection->run('insert into `us...', Array, Object(Closure))
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(411): Illuminate\Database\Connection->statement('insert into `us...', Array)
+#3 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `us...', Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Builder.php(2135): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `us...', Array, 'id')
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(1270): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(708): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(673): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(536): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(753): Illuminate\Database\Eloquent\Model->save()
+#10 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/helpers.php(1035): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}(Object(App\Base\UserCenter\User))
+#11 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(754): tap(Object(App\Base\UserCenter\User), Object(Closure))
+#12 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(Array)
+#13 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#14 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#15 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#16 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#17 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#18 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#19 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#20 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#21 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#22 {main}
+time : 18-01-27 21:18:00 message: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '15861621202' for key 'phone' in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php:458
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(458): PDOStatement->execute()
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(657): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `us...', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#3 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(459): Illuminate\Database\Connection->run('insert into `us...', Array, Object(Closure))
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(411): Illuminate\Database\Connection->statement('insert into `us...', Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `us...', Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Builder.php(2135): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `us...', Array, 'id')
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(1270): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(708): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(673): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(536): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(753): Illuminate\Database\Eloquent\Model->save()
+#12 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/helpers.php(1035): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}(Object(App\Base\UserCenter\User))
+#13 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(754): tap(Object(App\Base\UserCenter\User), Object(Closure))
+#14 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(Array)
+#15 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#16 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#17 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#18 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#19 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#20 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#21 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#22 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#23 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#24 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '15861621202' for key 'phone' (SQL: insert into `users` (`email`, `password`, `phone`, `name`, `updated_at`, `created_at`) values (848407696@qq.com, $2y$10$aC/0yB/ucIVNyOqyQpEFUeN6evtNMzEn6E.Eb9RRXD3/eQMpPT8M2, 15861621202, LaravelChen, 2018-01-27 21:18:00, 2018-01-27 21:18:00)) in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php:664
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(459): Illuminate\Database\Connection->run('insert into `us...', Array, Object(Closure))
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(411): Illuminate\Database\Connection->statement('insert into `us...', Array)
+#3 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `us...', Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Builder.php(2135): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `us...', Array, 'id')
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(1270): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(708): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(673): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(536): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(753): Illuminate\Database\Eloquent\Model->save()
+#10 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/helpers.php(1035): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}(Object(App\Base\UserCenter\User))
+#11 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(754): tap(Object(App\Base\UserCenter\User), Object(Closure))
+#12 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(Array)
+#13 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#14 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(14): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#15 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#16 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#17 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#18 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(113): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#19 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#20 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#21 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#22 {main}
+time : 18-01-28 11:33:02 message: 参数错误{"phone":["validation.required"]}
+time : 18-01-28 11:33:53 message: 参数错误{"phone":["validation.required"]}
+time : 18-01-28 12:03:35 message: {"phone":["validation.regex"]}
+time : 18-01-28 14:25:22 message: {"phone":["validation.regex"]}
+time : 18-01-28 14:46:43 message: {"phone":["validation.regex"]}
+time : 18-01-28 15:22:21 message: {"phone":["validation.regex"]}
+time : 18-01-28 15:22:39 message: {"phone":["validation.regex"]}
+time : 18-01-28 17:06:39 message: {"phone":["validation.regex"]}
+time : 18-01-28 18:00:53 message: {"phone":["validation.regex"]}
+time : 18-01-29 09:09:37 message: {"phone":["validation.regex"]}
+time : 18-01-30 17:52:12 message: {"phone":["validation.regex"]}
+time : 18-01-30 20:07:28 message: {"phone":["validation.regex"]}
+time : 18-01-30 20:20:53 message: {"phone":["validation.regex"]}
+time : 18-01-30 23:12:58 message: {"phone":["validation.regex"]}
+time : 18-01-31 11:03:16 message: {"phone":["validation.regex"]}
+time : 18-01-31 14:39:04 message: {"email":["validation.required"],"password":["validation.required"],"phone":["validation.required"],"name":["validation.required"],"code":["validation.required"]}
+time : 18-01-31 14:40:57 message: {"code":["validation.required"]}
+time : 18-01-31 14:42:37 message: {"code":["validation.required"]}
+time : 18-01-31 14:42:51 message: {"code":["validation.required"]}
+time : 18-01-31 14:42:56 message: {"code":["validation.required"]}
+time : 18-01-31 14:43:58 message: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2672252381@qq.com' for key 'email' in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php:458
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(458): PDOStatement->execute()
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(657): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `us...', Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#3 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(459): Illuminate\Database\Connection->run('insert into `us...', Array, Object(Closure))
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(411): Illuminate\Database\Connection->statement('insert into `us...', Array)
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `us...', Array)
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Builder.php(2135): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `us...', Array, 'id')
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(1270): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(708): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(673): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(536): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(753): Illuminate\Database\Eloquent\Model->save()
+#12 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/helpers.php(1035): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}(Object(App\Base\UserCenter\User))
+#13 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(754): tap(Object(App\Base\UserCenter\User), Object(Closure))
+#14 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(Array)
+#15 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#16 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(18): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#17 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#18 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#19 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#20 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(109): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#21 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#22 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#23 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#24 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2672252381@qq.com' for key 'email' (SQL: insert into `users` (`email`, `password`, `phone`, `name`, `updated_at`, `created_at`) values (2672252381@qq.com, $2y$10$X.C67/H7P7lIdLnOqfKeNerP1Y7/07OIw6uM5HpehxIlTkwWeUEiu, 13915216159, Jelly, 2018-01-31 14:43:58, 2018-01-31 14:43:58)) in /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php:664
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(459): Illuminate\Database\Connection->run('insert into `us...', Array, Object(Closure))
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Connection.php(411): Illuminate\Database\Connection->statement('insert into `us...', Array)
+#3 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `us...', Array)
+#4 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Query/Builder.php(2135): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `us...', Array, 'id')
+#5 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(1270): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(708): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(673): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(536): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(753): Illuminate\Database\Eloquent\Model->save()
+#10 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/helpers.php(1035): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}(Object(App\Base\UserCenter\User))
+#11 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Builder.php(754): tap(Object(App\Base\UserCenter\User), Object(Closure))
+#12 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1417): Illuminate\Database\Eloquent\Builder->create(Array)
+#13 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/database/Eloquent/Model.php(1434): Illuminate\Database\Eloquent\Model->__call('create', Array)
+#14 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserLogic.php(18): Illuminate\Database\Eloquent\Model::__callStatic('create', Array)
+#15 [internal function]: App\Logic\UserCenter\UserLogic->insert(Array)
+#16 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserLogic), Array)
+#17 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserRepository.php(19): App\Vendor\Invoker\Invoker::execute(Array, Array)
+#18 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserCenterController.php(109): App\Repository\UserCenter\Instances\UserRepository->insert(Array)
+#19 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserCenterController->POSTRegister()
+#20 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTRegister', NULL)
+#21 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(96): Core\Http\Dispatcher->dispatch()
+#22 {main}
+time : 18-01-31 15:33:04 message: {"phone":["validation.regex"]}
+time : 18-01-31 15:33:14 message: {"phone":["validation.regex"]}
+time : 18-01-31 15:33:18 message: {"phone":["validation.regex"]}
+time : 18-01-31 16:02:42 message: {"email":["validation.required_without"],"phone":["validation.required_without"]}
+time : 18-01-31 16:02:46 message: {"email":["validation.required_without"],"phone":["validation.required_without"]}
+time : 18-01-31 16:03:04 message: {"email":["validation.required_without"],"phone":["validation.required_without"]}
