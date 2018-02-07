@@ -147,7 +147,6 @@ class UserCenterController extends IndexController
         return response()->success(true);
     }
 
-
     /*
      * post请求(文件)
      */
@@ -173,7 +172,6 @@ class UserCenterController extends IndexController
     function POSTConnectionList()
     {
         $list = [];
-
         foreach (Server::getInstance()->getServer()->connections as $connection) {
             $data = '{
                     "action": "public",

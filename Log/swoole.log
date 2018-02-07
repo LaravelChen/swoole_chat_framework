@@ -2544,3 +2544,101 @@ Stack trace:
 #0 {main}
   thrown in /Users/apple/Code/Swoole_Chat/swoole_framework/Conf/Event.php on line 49.
 [2018-02-05 10:14:27 $89920.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 15:29:35 *532.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Class 'App\Repository\UserCenter\Instances\Invoker' not found in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Repository/UserCenter/Instances/UserChatRepository.php:13
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/WebSocket/Register.php(38): App\Repository\UserCenter\Instances\UserChatRepository->insert(Array)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/WebSocket/Register.php(20): App\Bll\WebSocket\R
+[2018-02-05 15:29:35 $510.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 15:30:01 *584.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Class 'App\Base\UserCenter\Model' not found in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Base/UserCenter/UserChat.php on line 6.
+[2018-02-05 15:30:01 $568.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 15:30:21 *630.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Call to a member function exception() on null in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserChatLogic.php:30
+Stack trace:
+#0 [internal function]: App\Logic\UserCenter\UserChatLogic->insert(Array)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserChatLogic), Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Rep
+[2018-02-05 15:30:21 $613.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 15:32:24 *698.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Call to a member function exception() on null in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserChatLogic.php:30
+Stack trace:
+#0 [internal function]: App\Logic\UserCenter\UserChatLogic->insert(Array)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserChatLogic), Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Rep
+[2018-02-05 15:32:24 $682.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 15:34:57 *766.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Call to a member function exception() on null in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserChatLogic.php:34
+Stack trace:
+#0 [internal function]: App\Logic\UserCenter\UserChatLogic->insert(Array)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserChatLogic), Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Rep
+[2018-02-05 15:34:57 $757.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2018-02-05 15:35:28 *834.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Call to a member function exception() on null in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Logic/UserCenter/UserChatLogic.php:34
+Stack trace:
+#0 [internal function]: App\Logic\UserCenter\UserChatLogic->insert(Array)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Vendor/Invoker/Invoker.php(15): ReflectionMethod->invokeArgs(Object(App\Logic\UserCenter\UserChatLogic), Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Rep
+[2018-02-05 15:35:28 $804.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 15:50:42 *1055.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Class 'App\Bll\UserCenter\Arr' not found in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php:33
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/AbstractInterface/AbstractREST.php(42): App\Bll\UserCenter\UserChatController->POSTChatList()
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Http/Dispatcher.php(137): Core\AbstractInterface\AbstractREST->__call('POSTChatList', NULL)
+#2 
+[2018-02-05 15:50:42 $1046.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2018-02-05 15:57:45 *1560.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Call to a member function values() on array in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php:44
+Stack trace:
+#0 [internal function]: App\Bll\UserCenter\UserChatController->App\Bll\UserCenter\{closure}(Array, 0)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/Collection.php(836): array_map(Object(Closure), Array, Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bl
+[2018-02-05 15:57:45 $1544.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 16:42:02 *3007.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Cannot use object of type stdClass as array in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php:45
+Stack trace:
+#0 [internal function]: App\Bll\UserCenter\UserChatController->App\Bll\UserCenter\{closure}(Array, 0)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/vendor/illuminate/support/Collection.php(836): array_map(Object(Closure), Array, Array)
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bl
+[2018-02-05 16:42:02 $2991.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-02-05 17:55:01 *5537.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 1 passed to App\Bll\IndexController::com_validate() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php on line 28 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Com/Traits/ValidatorTrait.php:11
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php(28): App\Bll\IndexController->
+[2018-02-05 17:55:01 $5528.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2018-02-05 17:55:01 *5538.1]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 1 passed to App\Bll\IndexController::com_validate() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php on line 28 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Com/Traits/ValidatorTrait.php:11
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php(28): App\Bll\IndexController->
+[2018-02-05 17:55:01 $5528.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=255, signal=0
+[2018-02-05 17:55:03 *5548.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 1 passed to App\Bll\IndexController::com_validate() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php on line 28 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Com/Traits/ValidatorTrait.php:11
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php(28): App\Bll\IndexController->
+[2018-02-05 17:55:03 $5528.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2018-02-05 17:55:45 *5551.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 1 passed to App\Bll\IndexController::com_validate() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php on line 28 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Com/Traits/ValidatorTrait.php:11
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php(28): App\Bll\IndexController->
+[2018-02-05 17:55:45 $5528.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2018-02-05 17:55:45 *5550.1]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 1 passed to App\Bll\IndexController::com_validate() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php on line 28 and defined in /Users/apple/Code/Swoole_Chat/swoole_framework/App/Com/Traits/ValidatorTrait.php:11
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_framework/App/Bll/UserCenter/UserChatController.php(28): App\Bll\IndexController->
+[2018-02-05 17:55:45 $5528.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=255, signal=0
+[2018-02-06 17:12:06 *23123.3]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 2 passed to Conf\Event::Conf\{closure}() must be an instance of Swoole\WebSocket\Frame, integer given in /Users/apple/Code/Swoole_Chat/swoole_framework/Conf/Event.php:50
+Stack trace:
+#0 [internal function]: Conf\Event->Conf\{closure}(Object(Swoole\WebSocket\Server), 5, 3)
+#1 {main}
+  thrown in /Users/apple/Code/Swoole_Chat/swoole_framework/Conf/Event.php on line 50.
+[2018-02-06 17:12:06 $23111.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2018-02-06 17:12:39 *23121.1]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 2 passed to Conf\Event::Conf\{closure}() must be an instance of Swoole\WebSocket\Frame, integer given in /Users/apple/Code/Swoole_Chat/swoole_framework/Conf/Event.php:50
+Stack trace:
+#0 [internal function]: Conf\Event->Conf\{closure}(Object(Swoole\WebSocket\Server), 3, 1)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(76): Swoole\Http\Server->start()
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/C
+[2018-02-06 17:12:39 *23122.2]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 2 passed to Conf\Event::Conf\{closure}() must be an instance of Swoole\WebSocket\Frame, integer given in /Users/apple/Code/Swoole_Chat/swoole_framework/Conf/Event.php:50
+Stack trace:
+#0 [internal function]: Conf\Event->Conf\{closure}(Object(Swoole\WebSocket\Server), 4, 2)
+#1 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/Swoole/Server.php(76): Swoole\Http\Server->start()
+#2 /Users/apple/Code/Swoole_Chat/swoole_framework/Core/C
+[2018-02-06 17:12:39 $23111.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=255, signal=0
+[2018-02-06 17:12:39 $23111.0]	WARNING	swManager_check_exit_status: worker#2 abnormal exit, status=255, signal=0
+[2018-02-06 22:34:37 *28505.1]	ERROR	swFactoryProcess_finish (ERROR 1004): send 182 byte failed, because connection[fd=3] is closed.
+[2018-02-06 22:34:58 *28506.2]	ERROR	swFactoryProcess_finish (ERROR 1004): send 328 byte failed, because connection[fd=5] is closed.
+[2018-02-06 22:35:02 *28508.4]	ERROR	swFactoryProcess_finish (ERROR 1004): send 182 byte failed, because connection[fd=7] is closed.
+[2018-02-06 22:36:04 *28573.7]	ERROR	swFactoryProcess_finish (ERROR 1004): send 44 byte failed, because connection[fd=1] is closed.
+[2018-02-06 22:36:11 *28568.2]	ERROR	swFactoryProcess_finish (ERROR 1004): send 196 byte failed, because connection[fd=5] is closed.
+[2018-02-07 09:13:59 *28573.7]	ERROR	swFactoryProcess_finish (ERROR 1004): send 44 byte failed, because connection[fd=3] is closed.
+[2018-02-07 09:15:44 *28573.7]	ERROR	swFactoryProcess_finish (ERROR 1004): send 44 byte failed, because connection[fd=6] is closed.
+[2018-02-07 10:13:18 *28573.7]	ERROR	swFactoryProcess_finish (ERROR 1004): send 44 byte failed, because connection[fd=8] is closed.
+[2018-02-07 10:13:38 *28567.1]	ERROR	swFactoryProcess_finish (ERROR 1004): send 196 byte failed, because connection[fd=11] is closed.
+[2018-02-07 10:18:21 *28573.7]	ERROR	swFactoryProcess_finish (ERROR 1004): send 44 byte failed, because connection[fd=9] is closed.
+[2018-02-07 10:48:00 *28573.7]	ERROR	swFactoryProcess_finish (ERROR 1004): send 44 byte failed, because connection[fd=12] is closed.

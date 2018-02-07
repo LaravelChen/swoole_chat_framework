@@ -82,6 +82,11 @@ class Config
             ],
             'SALT' => "UmVwb3J0U2lnblZhbGlkYXRpb24=", #盐值（用于前后段分离的接口标识）
             'VERSION' => 'v1.0.0',  #接口版本
+
+            #聊天种类
+            'PUBLIC_CHAT' => 'PUBLIC', #群聊
+            'PUBLIC_USER_LIST' => 'PUBLIC_USER_LIST',#群聊的在线用户
+            'PUBLIC_USER_CLOSE' => 'PUBLIC_USER_CLOSE',#群聊的用户关闭
         ];
     }
 

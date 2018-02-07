@@ -2,7 +2,9 @@
 
 namespace App\Com\Providers;
 
+use App\Repository\UserCenter\Contracts\UserChatContract;
 use App\Repository\UserCenter\Contracts\UserContract;
+use App\Repository\UserCenter\Instances\UserChatRepository;
 use App\Repository\UserCenter\Instances\UserRepository;
 use Core\Component\Di;
 
@@ -28,5 +30,6 @@ class UserCenterProvider
     public function conf()
     {
         $this->di->set(UserContract::class, UserRepository::class);
+        $this->di->set(UserChatContract::class, UserChatRepository::class);
     }
 }

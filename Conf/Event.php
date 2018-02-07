@@ -22,6 +22,7 @@ use Core\Component\Socket\Dispatcher;
 use Core\Component\Version\Control;
 use Core\Http\Request;
 use Core\Http\Response;
+use Core\Swoole\Server;
 
 class Event extends AbstractEvent
 {
@@ -46,6 +47,21 @@ class Event extends AbstractEvent
         // TODO: Implement beforeWorkerStart() method.
         $server->on("message", function (\swoole_websocket_server $server, \swoole_websocket_frame $frame) {
             Dispatcher::getInstance(Register::class, Parser::class)->dispatchWEBSOCK($frame);
+        });
+        $server->on("close", function (\swoole_websocket_server $server, $fd) {
+            $title = Config::getInstance()->getConf("PUBLIC_USER_LIST");
+            cache()->hdel('hash1', $fd);
+            $content = array_unique(cache()->hvals('hash1'));
+            $user_list = [];
+            foreach ($content as $data) {
+                array_push($user_list, json_decode($data, true));
+            }
+            $user_last['action'] = $title;
+            $user_last['content'] = $user_list;
+            $user_list = json_encode($user_last);
+            foreach ($server->connections as $fd) {
+                $server->push($fd, $user_list);
+            }
         });
     }
 
