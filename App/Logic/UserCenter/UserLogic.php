@@ -12,6 +12,11 @@ use Overtrue\EasySms\EasySms;
 
 class UserLogic
 {
+    /**
+     * 存储用户信息
+     * @param $params
+     * @return bool
+     */
     public function insert($params)
     {
         try {
@@ -34,6 +39,11 @@ class UserLogic
         };
     }
 
+    /**
+     * 发送验证码
+     * @param $params
+     * @return bool
+     */
     public function sendCode($params)
     {
         $config = \config()->getConf('MESSAGE');

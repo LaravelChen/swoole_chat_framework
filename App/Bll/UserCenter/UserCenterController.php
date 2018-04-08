@@ -17,26 +17,19 @@ class UserCenterController extends IndexController
 {
     use AbstractControllerTraits;
 
+    /**
+     * 测试数据
+     * @return bool
+     */
     public function POSTData()
     {
         $params = request_data();
         return response()->writeJson(200, ['phone' => $params['phone']], 'success');
     }
 
-    public function POSTGetDemo()
-    {
-        $params = request_data();
-        $args = [
-            'where' => [
-                'phone' => Arr::get($params, 'phone', ''),
-            ],
-        ];
-        $result = app(UserContract::class)->getOne($args);
-        return response()->success($result);
-    }
-
-    /*
+    /**
      * 登录
+     * @return bool
      */
     public function POSTLogin()
     {
@@ -77,8 +70,9 @@ class UserCenterController extends IndexController
         return response()->exception(FrameWorkCode::ERROR_LOGIN);
     }
 
-    /*
+    /**
      * 注册用户
+     * @return bool
      */
     public function POSTRegister()
     {
@@ -111,9 +105,10 @@ class UserCenterController extends IndexController
         return $result;
     }
 
-    /*
-    * 发送短信验证码
-    */
+    /**
+     * 发送短信验证码
+     * @return bool
+     */
     public function POSTSendCode()
     {
         $params = request_data();
@@ -130,8 +125,9 @@ class UserCenterController extends IndexController
         return $result;
     }
 
-    /*
+    /**
      * 退出登录
+     * @return bool
      */
     public function POSTLogout()
     {
@@ -147,8 +143,9 @@ class UserCenterController extends IndexController
         return response()->success(true);
     }
 
-    /*
+    /**
      * post请求(文件)
+     * @return bool
      */
     public function POSTShowPostFile()
     {
@@ -166,7 +163,7 @@ class UserCenterController extends IndexController
         response()->success(['title' => "{$file->getSize()}"]);
     }
 
-    /*
+    /**
      *所有用户的fd
      */
     function POSTConnectionList()

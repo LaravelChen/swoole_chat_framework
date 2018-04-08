@@ -70,14 +70,14 @@ class Config
             "ForwardingDomain" => "http://swoole-framework.dev:7777",//静态资源的域名(此处为nginx分配的域名,用于web开发)
 
             "ORIGIN" => [
-                "http://localhost:3000",
+                "*",
             ],
             #登录秘钥
             "SIGN" => [
                 'secret' => 'LaravelChen',
                 'iss' => 'http://127.0.0.1:9501',
                 'aud' => 'http://localhost:3000',
-                'exp' => time() + 60 * 60 * 60,
+                'exp' => time() + 60 * 60 * 120,
                 'lose' => -1,
             ],
             'SALT' => "UmVwb3J0U2lnblZhbGlkYXRpb24=", #盐值（用于前后段分离的接口标识）
@@ -87,6 +87,8 @@ class Config
             'PUBLIC_CHAT' => 'PUBLIC', #群聊
             'PUBLIC_USER_LIST' => 'PUBLIC_USER_LIST',#群聊的在线用户
             'PUBLIC_USER_CLOSE' => 'PUBLIC_USER_CLOSE',#群聊的用户关闭
+            'ADD_USER_NOTIFICATION' => 'ADD_USER_NOTIFICATION',#添加好友信息
+            'PRIVATE_CHAT' => 'PRIVATE',#私聊
         ];
     }
 

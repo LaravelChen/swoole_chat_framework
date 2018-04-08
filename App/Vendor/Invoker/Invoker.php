@@ -4,7 +4,7 @@ namespace App\Vendor\Invoker;
 
 class Invoker
 {
-    public static function execute($action, $params)
+    public static function execute($action, $params = null)
     {
         $action = explode('.', $action);
         $method = array_pop($action);
@@ -12,6 +12,6 @@ class Invoker
         $reflection = new \ReflectionClass ($class);
         $instance = $reflection->newInstanceArgs();
         $method = $reflection->getMethod($method);
-        return $method->invokeArgs($instance, array($params));
+        return $method->invokeArgs($instance, [$params]);
     }
 }

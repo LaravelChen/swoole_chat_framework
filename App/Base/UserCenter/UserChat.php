@@ -4,10 +4,12 @@ namespace App\Base\UserCenter;
 
 
 use App\Base\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 
 class UserChat extends Model
 {
+    use  SoftDeletes;
     protected $table = 'chat_content';
     protected $guarded = ['id'];
 
@@ -15,6 +17,7 @@ class UserChat extends Model
     {
         return $this->hasOne(User::class, 'id', 'user_id');
     }
+
 
     public function fromUser()
     {
@@ -34,5 +37,15 @@ class UserChat extends Model
     public function getAvatarAttribute()
     {
         return Arr::get($this->user, 'avatar', '');
+    }
+
+    public function filterUserId($q, $user_id)
+    {
+        return $q->whereIn('user_id', $user_id);
+    }
+
+    public function filterToUserId($q, $user_id)
+    {
+        return $q->whereIn('to_user_id', $user_id);
     }
 }

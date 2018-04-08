@@ -24,4 +24,10 @@ class UserRepository implements UserContract
         $class = 'App.Logic.UserCenter.UserLogic.sendCode';
         return Invoker::execute($class, $params);
     }
+
+    public function getFriendList($params)
+    {
+        $class = 'App.Logic.UserCenter.UserLogic.getFriendList';
+        return Invoker::execute($class, $params);
+    }
 }

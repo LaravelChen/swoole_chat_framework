@@ -15,8 +15,9 @@ class UserChatController extends IndexController
 {
     use AbstractControllerTraits;
 
-    /*
+    /**
      * 群聊的聊天记录
+     * @return bool
      */
     public function POSTChatList()
     {
@@ -45,6 +46,7 @@ class UserChatController extends IndexController
             $chat['action'] = $data['action'];
             $chat['content'] = [
                 'fd' => Arr::get($data, 'id', '') . time(),
+                'user_id' => Arr::get($data, 'user_id', ''),
                 'name' => Arr::get($data, 'name', ''),
                 'avatar' => Arr::get($data, 'avatar', ''),
                 'email' => Arr::get($data, 'email', ''),
@@ -56,12 +58,40 @@ class UserChatController extends IndexController
         return response()->success($result);
     }
 
-    public function POSTGetFd()
+    /**
+     * 获取所有的fds
+     */
+    public function POSTgetFds()
     {
         $list = [];
         foreach (Server::getInstance()->getServer()->connections as $connection) {
             array_push($list, $connection);
         }
         $this->response()->writeJson(200, $list, "this is all websocket list");
+    }
+
+    /**
+     * 获取在线用户列表
+     * @return bool
+     */
+    public function POSTgetUserOnlineList()
+    {
+        $list = [];
+        foreach (Server::getInstance()->getServer()->connections as $connection) {
+            $work = Server::getInstance()->getServer()->connection_info($connection);
+            if ($work['websocket_status']) {
+                array_push($list, $connection);
+            }
+        }
+        $result = [];
+        $data = cache()->hgetall('userlist');
+        collect($list)->each(function ($q) use ($data, &$result) {
+            array_push($result, $data[$q]);
+        });
+        $result = array_values(array_unique($result));
+        foreach ($result as &$data){
+            $data=json_decode($data);
+        }
+        return response()->success($result);
     }
 }

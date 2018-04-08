@@ -17,6 +17,7 @@ use App\Com\Providers\UserCenterProvider;
 use App\Middleware\CORSMiddleware;
 use App\Middleware\SignValidationMiddleware;
 use App\Middleware\TokenValidationMiddleware;
+use App\Vendor\Invoker\Invoker;
 use Core\AbstractInterface\AbstractEvent;
 use Core\Component\Socket\Dispatcher;
 use Core\Component\Version\Control;
@@ -45,23 +46,14 @@ class Event extends AbstractEvent
     function beforeWorkerStart(\swoole_server $server)
     {
         // TODO: Implement beforeWorkerStart() method.
+        //监听消息
         $server->on("message", function (\swoole_websocket_server $server, \swoole_websocket_frame $frame) {
             Dispatcher::getInstance(Register::class, Parser::class)->dispatchWEBSOCK($frame);
         });
+        //监听关闭
         $server->on("close", function (\swoole_websocket_server $server, $fd) {
-            $title = Config::getInstance()->getConf("PUBLIC_USER_LIST");
-            cache()->hdel('hash1', $fd);
-            $content = array_unique(cache()->hvals('hash1'));
-            $user_list = [];
-            foreach ($content as $data) {
-                array_push($user_list, json_decode($data, true));
-            }
-            $user_last['action'] = $title;
-            $user_last['content'] = $user_list;
-            $user_list = json_encode($user_last);
-            foreach ($server->connections as $fd) {
-                $server->push($fd, $user_list);
-            }
+            $params = ["server" => $server, "fd" => $fd,];
+            Invoker::execute('App.Logic.WebSocket.UserChatLogic.userClose', $params);
         });
     }
 

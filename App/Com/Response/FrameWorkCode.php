@@ -34,4 +34,5 @@ class FrameWorkCode
     const ERROR_LOGIN = ['code' => 1116, 'message' => '账号与密码不匹配!', 'flag' => self::FLAG_NOTICE];
     const ERROR_SIGN = ['code' => 1117, 'message' => '签名不匹配!', 'flag' => self::FLAG_NOTICE];
     const ERROR_CODE = ['code' => 1118, 'message' => '验证码不正确!', 'flag' => self::FLAG_NOTICE];
+    const NOTIFIACTION_EXIST = ['code' => 1118, 'message' => '你的好友请求已存在!', 'flag' => self::FLAG_NOTICE];
 }

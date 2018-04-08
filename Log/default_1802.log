@@ -193,3 +193,8 @@ time : 18-02-07 10:26:47 message: {"type":["validation.required"],"password":["v
 time : 18-02-07 10:27:14 message: {"type":["validation.required"]}
 time : 18-02-07 10:27:16 message: {"type":["validation.required"]}
 time : 18-02-07 10:27:25 message: {"type":["validation.in"]}
+time : 18-02-10 12:10:20 message: {"type":["validation.required"],"to_user_id":["validation.required_without"],"message":["validation.required"]}
+time : 18-02-10 12:11:07 message: {"type":["validation.required"],"user_id":["validation.required"],"to_user_id":["validation.required"],"message":["validation.required"]}
+time : 18-02-10 15:04:11 message: {"type":["validation.required"],"user_id":["validation.required"],"to_user_id":["validation.required"],"message":["validation.required"]}
+time : 18-02-14 14:50:43 message: {"type":["validation.required"],"to_user_id":["validation.required"]}
+time : 18-02-14 15:25:17 message: {"is_read":["validation.required"]}
