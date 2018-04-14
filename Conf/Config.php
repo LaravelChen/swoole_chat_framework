@@ -133,9 +133,9 @@ class Config
                 // 可用的网关配置
                 'gateways' => [
                     'aliyun' => [
-                        'access_key_id' => 'LTAIEsjU4kdGShIV',
-                        'access_key_secret' => 'J379helorkKSfJZ6XC21FsZnPXnuSj',
-                        'sign_name' => '微课堂',
+                        'access_key_id' => '',
+                        'access_key_secret' => '',
+                        'sign_name' => '',
                     ],
                 ],
             ],
