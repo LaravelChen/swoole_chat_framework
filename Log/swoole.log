@@ -3034,3 +3034,22 @@ Stack trace:
 [2018-04-08 12:54:54 *19791.7]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=163] is closed.
 [2018-04-08 12:54:54 *19785.1]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=163] is closed.
 [2018-04-08 12:54:54 *19784.0]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=163] is closed.
+[2018-04-08 15:20:40 *24288.7]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=53] is closed.
+[2018-04-08 15:20:40 *24282.1]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=53] is closed.
+[2018-04-08 15:20:40 *24288.7]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=52] is closed.
+[2018-04-08 15:20:40 *24281.0]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=53] is closed.
+[2018-04-08 15:20:40 *24282.1]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=52] is closed.
+[2018-04-08 15:20:40 *24287.6]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=53] is closed.
+[2018-04-08 15:20:47 *24281.0]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=63] is closed.
+[2018-04-08 15:20:47 *24282.1]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=63] is closed.
+[2018-04-08 15:20:47 *24288.7]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=63] is closed.
+[2018-04-14 09:53:34 *12742.3]	WARNING	swSignal_callback: signal[13] callback is null.
+[2018-04-14 09:53:38 *12743.4]	WARNING	swSignal_callback: signal[13] callback is null.
+[2018-04-14 18:24:37 *38186.4]	NOTICE	zm_deactivate_swoole (ERROR 9003): worker process is terminated by exit()/die().
+[2018-04-14 18:24:37 *38182.0]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 407 byte failed, because connection[fd=1] is closed.
+[2018-04-14 18:24:37 *38182.0]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 398 byte failed, because connection[fd=1] is closed.
+[2018-04-14 18:34:10 *38472.7]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 340 byte failed, because connection[fd=2] is closed.
+[2018-04-14 20:35:15 *40478.3]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught TypeError: Argument 1 passed to App\Bll\IndexController::com_validate() must be of the type array, null given, called in /Users/apple/Code/Swoole_Chat/swoole_chat_framework/App/Bll/UserCenter/NotificationController.php on line 75 and defined in /Users/apple/Code/Swoole_Chat/swoole_chat_framework/App/Com/Traits/ValidatorTrait.php:11
+Stack trace:
+#0 /Users/apple/Code/Swoole_Chat/swoole_chat_framework/App/Bll/UserCenter/NotificationController.php(75): Ap
+[2018-04-14 20:35:15 $40466.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0

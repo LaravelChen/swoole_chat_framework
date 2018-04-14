@@ -183,4 +183,5 @@ class UserCenterController extends IndexController
         }
         $this->response()->writeJson(200, $list, "this is all websocket list");
     }
+
 }

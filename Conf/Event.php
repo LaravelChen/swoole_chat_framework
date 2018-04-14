@@ -81,8 +81,8 @@ class Event extends AbstractEvent
     {
         // TODO: Implement onRequest() method.
         CORSMiddleware::getInstance()->handle($request, $response);  #跨域中间件处理
-        SignValidationMiddleware::getInstance()->handle($request, $response);  #签名验证
-        TokenValidationMiddleware::getInstance()->handle($request, $response);  #token验证
+//        SignValidationMiddleware::getInstance()->handle($request, $response);  #签名验证
+//        TokenValidationMiddleware::getInstance()->handle($request, $response);  #token验证
     }
 
     function onDispatcher(Request $request, Response $response, $targetControllerClass, $targetAction)
