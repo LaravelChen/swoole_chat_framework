@@ -23,10 +23,10 @@ php server start
 
 
 ### 4.项目效果
-#### 1.1 畅聊室
+#### 4.1 畅聊室
 ![image](https://github.com/LaravelChen/React-Small-Chat/raw/master/screen/image1.gif)
 ![image](https://github.com/LaravelChen/React-Small-Chat/raw/master/screen/image2.gif)
-#### 1.2 私聊室
+#### 4.2 私聊室
 ![image](https://github.com/LaravelChen/React-Small-Chat/raw/master/screen/image3.gif)
 ![image](https://github.com/LaravelChen/React-Small-Chat/raw/master/screen/image4.gif)
 
